@@ -1,0 +1,4 @@
+ <label>Ordenar por:</label> 
+ <select [(ngModel)]="_sortSelected" (change)="onChangeValue()">
+        <option *ngFor="let sort of _sorts" [ngValue]="sort">{{ sort.name }}</option>
+</select>
